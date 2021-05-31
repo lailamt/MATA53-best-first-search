@@ -148,7 +148,7 @@ class Ui_MainWindow(object):
         self.label_7.setText(_translate("MainWindow", "The enter values for the vertices as follows in the Input vertices field:"))
         self.label_5.setText(_translate("MainWindow", "(out_vertex,in_vertex,cost)"))
         self.label_4.setText(_translate("MainWindow", "Input vertices"))
-        self.number_of_vertices_input.setPlainText(_translate("MainWindow", "13"))
+        self.number_of_vertices_input.setPlainText(_translate("MainWindow", "14"))
         self.label_3.setText(_translate("MainWindow", "Number of Vertices:"))
         self.field_input_vertices_input.setPlainText(_translate("MainWindow", "(0, 1, 3)\n"
                                                                 "(0, 2, 6)\n"
