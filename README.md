@@ -26,7 +26,7 @@ Este algoritmo percorrerá o caminho menos custoso primeiro na fila (no caso da 
 
 Esse algoritmo é frequentemente usado para encontrar caminhos na busca combinatória. 
 
-São variantes do BestFS os algoritmos de **BestFS Guloso** e o **A* **.
+São variantes do BestFS os algoritmos de **BestFS Guloso** e o ** A\* **.
 
 ### Pseudocódigo
 // This pseudocode is adapted from below 
