@@ -62,9 +62,11 @@ Abaixo alguns prints com informações relevantes sobre sua utilização.
 6. Saída
 7. Botão para gerar valores aleatórios para o caminho.
 - Após a execução do algoritmo o seguinte botão é habilitado
+
 ![botão gerar grafo](https://i.ibb.co/KzH62gP/application2.png)
 8. Botão que gera o grafo com os nós e arestas visitadas em vermelho.
 - O botão "Generate graph with path" abre uma nova janela conforme imagem abaixo.
+
 ![Janela do grafo gerado](https://i.ibb.co/7SxTJ0W/graph.png)
 1. Menu de interação com o grafo.
 2. Área do grafo gerado. Ao salvar o grafo por esta janela, a imagem irá conter apenas os elementos presentes dentro da área do retângulo. 
