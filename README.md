@@ -17,11 +17,17 @@ Matrícula: 218125095
 
 # Best First Search Algorithm
 
-O **Algoritmo Best First Search** usa a função heurística F(n)=h(n) de procura ao nó de destino que expande o nó que é mais próximo ao objetivo, implicando numa condução rápida até o nó destino.
+O **Algoritmo Best First Search** (BestFS) usa o conceito de fila prioritária e pesquisa heurística. É um algoritmo de busca que funciona em uma regra específica. O objetivo é alcançar o destino desde o estado inicial pelo caminho mais curto ou menos custoso.
 
-A heurística é aplicada globalmente, ou seja, o caminho a ser seguido é selecionado entre todos os nós abertos até o momento, o nó aberto com o menor custo é escolhido para a expansão.
+Trata-se de um algoritmo informado (ou heurístico), em que a pesquisa é realizada usando informações adicionais para determinar o próximo passo para encontrar a solução. Se considerarmos a pesquisa como uma forma de travessia em um grafo, um algoritmo de pesquisa desinformado atravessaria cegamente para o próximo nó de uma determinada maneira, sem considerar o custo associado a essa ação. Uma pesquisa informada por outro lado, usaria uma função de avaliação para decidir qual entre os vários nós disponíveis é o mais promissor antes de atravessar para esse nó.
 
-Dessa forma o algoritmo seleciona nós que “prometem” dirigir a busca mais rapidamente ao destino. Valores menores de f(n) indicam os melhores nós. Sendo assim, expande primeiro o nó “aparentemente melhor” e termina quando o nó a ser expandido for o destino final.
+BestFS usa o conceito de fila de prioridade e pesquisa heurística. Para traçar o caminho do grafo, o método BFS usa duas listas para rastrear a travessia. Uma lista que mantém o controle dos nós "imediatos" atuais disponíveis para passagem e uma lista que mantém o controle dos nós já atravessados.
+Este algoritmo percorrerá o caminho menos custoso primeiro na fila (no caso da implementação dessa interface). A complexidade de tempo do algoritmo BestFS é dada por `O(n logn)` no pior caso. 
+
+Esse algoritmo é frequentemente usado para encontrar caminhos na busca combinatória. 
+
+São variantes do BestFS os algoritmos de **BestFS Guloso** e o **A* **.
+
 ### Pseudocódigo
 // This pseudocode is adapted from below 
 // source:
