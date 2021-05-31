@@ -1,6 +1,16 @@
+## Table of contents:
+ - [MATA53-best-first-search](#mata53-best-first-search)
+ - [Best First Search Algorithm](#best-first-search-algorithm)
+ - [Pseudocódigo](#pseudoc%C3%B3digo)
+ - [Execução do Programa](#execu%C3%A7%C3%A3o-do-programa)
+ - [A Interface visual](#a-interface-visual)
+ - [Google Colaboratory](#google-colaboratory)
+
 # MATA53-best-first-search
 Atividade da disciplina de Teoria dos Grafos (MATA53) da Universidade Federal da Bahia (UFBA), no primeiro semestre de 2021.
+
 Discente: Laila Pereira Mota Santos
+
 Matrícula: 218125095
 
 ### [**Link do YouTube com vídeo da execução da ferramenta**](https://www.youtube.com)
@@ -8,7 +18,9 @@ Matrícula: 218125095
 # Best First Search Algorithm
 
 O **Algoritmo Best First Search** usa a função heurística F(n)=h(n) de procura ao nó de destino que expande o nó que é mais próximo ao objetivo, implicando numa condução rápida até o nó destino.
+
 A heurística é aplicada globalmente, ou seja, o caminho a ser seguido é selecionado entre todos os nós abertos até o momento, o nó aberto com o menor custo é escolhido para a expansão.
+
 Dessa forma o algoritmo seleciona nós que “prometem” dirigir a busca mais rapidamente ao destino. Valores menores de f(n) indicam os melhores nós. Sendo assim, expande primeiro o nó “aparentemente melhor” e termina quando o nó a ser expandido for o destino final.
 ### Pseudocódigo
 // This pseudocode is adapted from below 
@@ -39,16 +51,19 @@ O código de programa pode ser executado de duas formas:
  - Faça download do arquivo .zip do repositório e descompacte.
  - Em seu terminal navegue até o diretório [MATA53-best-first-search](https://github.com/lailamt/MATA53-best-first-search)/[BestFS](https://github.com/lailamt/MATA53-best-first-search/tree/main/BestFS)/**source**/
  - Execute o código-fonte através do comando `$ py BestFS.py`
+ 
  **!!** Caso decida utilizar o terminal para a execução da interface esteja atento as dependências do projeto. Todas as dependências utilizadas neste projeto estão enunciadas no arquivo **requirements.txt**.
 
  3. Executar o arquivo .exe
 - Faça download do arquivo .zip do repositório e descompacte.
 - Navegue até o diretório [MATA53-best-first-search](https://github.com/lailamt/MATA53-best-first-search)/[BestFS](https://github.com/lailamt/MATA53-best-first-search/tree/main/BestFS)
 - Execute o arquivo BestFS.exe
+
 **!!** É possível que o seu SO reporte o arquivo como perigoso. Entretanto este é um procedimento normal visto que o executável deste repositório não possui assinatura. Você pode encontrar o código-fonte no repositório, caso queira inspecioná-lo. Mais informações sobre isto [nesse link](https://stackoverflow.com/questions/43777106/program-made-with-pyinstaller-now-seen-as-a-trojan-horse-by-avg) e [nesse outro link](https://www.defcon-lab.org/se-python-entao-virus/).
 
 # A Interface visual
 A interface visual foi desenvolvida com o auxílio da biblioteca PyQT5 e o aplicativo QTDesigner.
+
 Abaixo alguns prints com informações relevantes sobre sua utilização.
 - Ao descompactar os arquivos você encontrará dentro do diretório BestFS o seguinte arquivo executável. Abra o arquivo para ter acesso a interface.
 
