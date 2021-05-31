@@ -51,8 +51,10 @@ O código de programa pode ser executado de duas formas:
 A interface visual foi desenvolvida com o auxílio da biblioteca PyQT5 e o aplicativo QTDesigner.
 Abaixo alguns prints com informações relevantes sobre sua utilização.
 - Ao descompactar os arquivos você encontrará dentro do diretório BestFS o seguinte arquivo executável. Abra o arquivo para ter acesso a interface.
+
 ![Diretório BestFS](https://i.ibb.co/Kq79sgs/arvore-dir.png)
 - Ao executar o arquivo `BestFS.exe` a seguinte interface irá abrir
+
 ![Interface visual](https://i.ibb.co/mG7rX7g/application.png)
 1. Instruções da interface
 2. Campo para ser preenchido com a quantidade total de vértices do grafo
