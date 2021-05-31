@@ -9,6 +9,7 @@
 
 from typing import Tuple
 from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtWidgets import *
 import networkx as nx
 import matplotlib.pyplot as plt
 import random
@@ -174,31 +175,42 @@ class Ui_MainWindow(object):
     # FUNÇÃO EXECUTADA AO CLICAR NO BOTÃO DE RUN ALGORITHM #
     ########################################################
     def onClick_bestfs(self):
+        if(len(self.number_of_vertices_input.toPlainText()) == 0 or 
+            len(self.field_input_vertices_input.toPlainText()) == 0):
+            error = QMessageBox()
+            error.setText("Please fill in all fields!")
+            error.exec_()
+            return
         #print("clicou")
-        number_vertices = self.number_of_vertices_input.toPlainText()
-        global graph, graph_path
-        graph = [[] for i in range(int(number_vertices))]
-        one_edge = self.field_input_vertices_input.toPlainText()
-        split_input = one_edge.split('\n')
-        #print(split_input)
-        for x in split_input:
-            y = x.replace('(', '')
-            y = y.replace(')','')
-            y = y.replace(' ','')
-            print(y)
-            split_edges = y.split(',')
-            self.addedge(int(split_edges[0]), int(split_edges[1]), int(split_edges[2]))
-        #print(graph)
-        path_to_walk = self.field_input_path_input.toPlainText()
-        path_to_walk = path_to_walk.replace('(','')
-        path_to_walk = path_to_walk.replace(')','')
-        path_to_walk = path_to_walk.replace(' ', '')
-        path_to_walk = path_to_walk.split(',')
-        #print(path_to_walk)
-        graph_path = self.best_first_search((int(path_to_walk[0]),int(path_to_walk[1])))
-        self.label_10.setText("Total Cost: " + str(graph_path.pop(-1)))
-        self.label_11.setText("Path: " + str(graph_path))
-        self.generate_graph_button.setEnabled(True)
+        try:
+            number_vertices = self.number_of_vertices_input.toPlainText()
+            global graph, graph_path
+            graph = [[] for i in range(int(number_vertices))]
+            one_edge = self.field_input_vertices_input.toPlainText()
+            split_input = one_edge.split('\n')
+            #print(split_input)
+            for x in split_input:
+                y = x.replace('(', '')
+                y = y.replace(')','')
+                y = y.replace(' ','')
+                print(y)
+                split_edges = y.split(',')
+                self.addedge(int(split_edges[0]), int(split_edges[1]), int(split_edges[2]))
+            #print(graph)
+            path_to_walk = self.field_input_path_input.toPlainText()
+            path_to_walk = path_to_walk.replace('(','')
+            path_to_walk = path_to_walk.replace(')','')
+            path_to_walk = path_to_walk.replace(' ', '')
+            path_to_walk = path_to_walk.split(',')
+            #print(path_to_walk)
+            graph_path = self.best_first_search((int(path_to_walk[0]),int(path_to_walk[1])))
+            self.label_10.setText("Total Cost: " + str(graph_path.pop(-1)))
+            self.label_11.setText("Path: " + str(graph_path))
+            self.generate_graph_button.setEnabled(True)
+        except:
+            error_calc = QMessageBox()
+            error_calc.setText("Impossible Path or field input is not valid!")
+            error_calc.exec_()
     
     #######################################################
     # FUNÇÃO EXECUTADA AO CLICAR NO BOTÃO GENERATE GRAPH  #
