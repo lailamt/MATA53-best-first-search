@@ -13,7 +13,7 @@ Discente: Laila Pereira Mota Santos
 
 Matrícula: 218125095
 
-### [**Link do YouTube com vídeo da execução da ferramenta**](https://www.youtube.com)
+### [**Link do YouTube com vídeo da execução da ferramenta**](https://youtu.be/SHS3OTBe8wA)
 
 # Best First Search Algorithm
 
