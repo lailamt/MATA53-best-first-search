@@ -60,7 +60,7 @@ O código de programa pode ser executado de duas formas:
  
  **!!** Caso decida utilizar o terminal para a execução da interface esteja atento as dependências do projeto. Todas as dependências utilizadas neste projeto estão enunciadas no arquivo **requirements.txt**.
 
- 3. Executar o arquivo .exe
+ 2. Executar o arquivo .exe (Windows)
 - Faça download do arquivo .zip do repositório e descompacte.
 - Navegue até o diretório [MATA53-best-first-search](https://github.com/lailamt/MATA53-best-first-search)/[BestFS](https://github.com/lailamt/MATA53-best-first-search/tree/main/BestFS)
 - Execute o arquivo BestFS.exe
